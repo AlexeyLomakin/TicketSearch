@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="navigation_tickets">Авиабилеты</string>
+    <string name="navigation_hotels">Отели</string>
+    <string name="navigation_other">Короче</string>
+    <string name="navigation_subscriptions">Подписки</string>
+    <string name="navigation_profile">Профиль</string>
+    <string name="search_cheap">Поиск дешевых\nавиабилетов</string>
+    <string name="recommendations_title">Музыкально отлететь</string>
+    <string name="departure_hint">Откуда - Москва</string>
+    <string name="arrival_hint">Куда - Турция</string>
+    <string name="popular_destination">Популярное направление</string>
+    <string name="anywhere">Куда угодно</string>
+    <string name="istanbul_name">Стамбул</string>
+    <string name="sochi_name">Сочи</string>
+    <string name="phuket_name">Пхукет</string>
+    <string name="without_transfer">/ Без пересадок</string>
+    <string name="hot_tickets">Горячие Билеты</string>
+    <string name="weekends">Выходные</string>
+    <string name="difficult_route">Сложный маршрут</string>
+</resources>

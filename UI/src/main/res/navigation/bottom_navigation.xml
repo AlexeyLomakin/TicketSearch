@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_controller"
+    app:startDestination="@id/navigation_tickets">
+
+    <fragment
+        android:id="@+id/navigation_tickets"
+        android:name="com.ui.OffersFragment"
+        android:label="Tickets"
+        tools:layout="@layout/offers_fragment" />
+    <fragment
+        android:id="@+id/navigation_hotels"
+        android:name="com.ui.CapFragment"
+        android:label="Hotels"
+        tools:layout="@layout/fragment_cap" />
+    <fragment
+        android:id="@+id/navigation_other"
+        android:name="com.ui.CapFragment"
+        android:label="Other"
+        tools:layout="@layout/fragment_cap" />
+    <fragment
+        android:id="@+id/navigation_subscriptions"
+        android:name="com.ui.CapFragment"
+        android:label="Subscriptions"
+        tools:layout="@layout/fragment_cap" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.ui.CapFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_cap" />
+
+</navigation>

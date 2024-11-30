@@ -1,6 +1,6 @@
 [versions]
-agp = "8.5.2"
-kotlin = "1.9.0"
+agp = "8.7.2"
+kotlin = "2.0.21"
 coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -10,7 +10,7 @@ material = "1.12.0"
 activity = "1.9.3"
 constraintlayout = "2.2.0"
 jetbrainsKotlinJvm = "1.9.0"
-kspVersion = "1.9.0-1.0.11"
+kspVersion = "2.0.21-1.0.27"
 retrofit = "2.9.0"
 converterGson = "2.9.0"
 hiltAndroid = "2.52"
@@ -21,7 +21,10 @@ lifecycleLivedataKtx = "2.8.7"
 lifecycleRuntimeKtx = "2.8.7"
 javaxInject = "1"
 kotlinxCoroutinesCore = "1.9.0"
-
+navigationFragmentKtx = "2.8.4"
+navigationUiKtx = "2.8.4"
+navVersion = "2.8.4"
+navigationFragment = "2.8.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -43,6 +46,9 @@ lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx",
 androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 javax-inject = { module = "javax.inject:javax.inject", version.ref = "javaxInject" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
 
 
 [plugins]
@@ -52,3 +58,4 @@ android-library = { id = "com.android.library", version.ref = "agp" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
 ksp = {id = "com.google.devtools.ksp", version.ref = "kspVersion"}
 hilt = {id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid"}
+navigation = {id = "androidx.navigation.safeargs.kotlin", version.ref = "navVersion"}

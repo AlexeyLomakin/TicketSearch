@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt)
 }
 
 android {
@@ -34,10 +36,30 @@ android {
 
 dependencies {
 
+    implementation(project(":domain"))
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Fragment
+    implementation(libs.androidx.fragment.ktx)
+
+    // ViewBindingPropertyDelegate
+    //используется для упрощения работы с фрагменты и избегания boilerplate-кода
+    implementation(libs.viewbindingpropertydelegate.noreflection)
+
+    //Card View
+    implementation (libs.androidx.cardview)
+
+    //LiveData
+    implementation (libs.androidx.lifecycle.runtime.ktx)
+    implementation (libs.lifecycle.livedata.ktx)
+
+    // Hilt
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.android.compiler)
 }

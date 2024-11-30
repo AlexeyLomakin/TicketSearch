@@ -7,3 +7,12 @@ java {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
 }
+
+dependencies {
+
+    //Coroutines
+    implementation(libs.kotlinx.coroutines.core)
+
+    //Inject
+    implementation(libs.javax.inject)
+}

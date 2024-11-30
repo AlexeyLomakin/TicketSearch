@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/navigation_tickets"
+        android:id="@+id/navigation_tickets"
+        android:icon="@drawable/airplane_blue"/>
+
+    <item android:title="@string/navigation_hotels"
+        android:id="@+id/navigation_hotels"
+        android:icon="@drawable/hotels"/>
+
+    <item android:title="@string/navigation_other"
+        android:id="@+id/navigation_other"
+        android:icon="@drawable/others"/>
+
+    <item android:title="@string/navigation_subscriptions"
+        android:id="@+id/navigation_subscriptions"
+        android:icon="@drawable/subscriptions"/>
+
+    <item android:title="@string/navigation_profile"
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile"/>
+
+</menu>

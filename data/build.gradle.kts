@@ -49,4 +49,8 @@ dependencies {
     // Retrofit
     implementation(libs.retrofit)
     implementation(libs.retrofit2.converter.gson)
+
+    //OkHttp
+    implementation(libs.okhttp4)
+
 }

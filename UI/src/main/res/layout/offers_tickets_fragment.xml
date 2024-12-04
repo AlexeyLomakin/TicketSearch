@@ -39,17 +39,16 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_departure"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginStart="15dp"
                 app:endIconMode="custom"
                 app:endIconTint= "@color/white"
                 app:endIconDrawable="@drawable/swap_button"
                 app:layout_constraintBottom_toTopOf="@id/divider_view"
                 app:layout_constraintStart_toEndOf="@+id/back_btn"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
+                app:layout_constraintEnd_toEndOf="@+id/divider_view">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/departure"
@@ -67,7 +66,7 @@
                 android:layout_width="0dp"
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="15dp"
+                android:layout_marginEnd="10dp"
                 android:background="#5E5F61"
                 app:layout_constraintBottom_toTopOf="@+id/til_arrival"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -77,14 +76,15 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_arrival"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 app:endIconMode="clear_text"
                 app:endIconTint= "@color/white"
                 app:endIconDrawable="@drawable/clear_btn"
                 app:layout_constraintTop_toBottomOf="@id/divider_view"
-                app:layout_constraintStart_toEndOf="@+id/back_btn" >
+                app:layout_constraintStart_toStartOf="@+id/til_departure"
+                app:layout_constraintEnd_toEndOf="@+id/til_departure">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/arrival"

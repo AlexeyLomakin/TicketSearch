@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="@string/navigation_tickets"
-        android:id="@+id/navigation_tickets"
+        android:id="@+id/navigation_offers"
         android:icon="@drawable/airplane_blue"/>
 
     <item android:title="@string/navigation_hotels"

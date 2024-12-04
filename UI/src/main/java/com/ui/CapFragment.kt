@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
+import com.ui.offers.OffersFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

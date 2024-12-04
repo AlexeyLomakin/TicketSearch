@@ -1,4 +1,4 @@
-package com.domain
+package com.domain.entitys
 
 data class TicketsOffersDomainEntity(
     val id: Int,

@@ -1,5 +1,7 @@
-package com.domain
+package com.domain.useCases
 
+import com.domain.entitys.OffersDomainEntity
+import com.domain.TicketsRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

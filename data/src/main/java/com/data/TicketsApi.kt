@@ -1,5 +1,8 @@
 package com.data
 
+import com.data.models.OffersResponse
+import com.data.models.TicketsOffersResponse
+import com.data.models.TicketsResponse
 import retrofit2.Response
 import retrofit2.http.GET
 

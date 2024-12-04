@@ -1,8 +1,12 @@
 package com.data
 
-import com.domain.OffersDomainEntity
-import com.domain.TicketsDomainEntity
-import com.domain.TicketsOffersDomainEntity
+import com.data.models.Mapper
+import com.data.models.OffersResponse
+import com.data.models.TicketsOffersResponse
+import com.data.models.TicketsResponse
+import com.domain.entitys.OffersDomainEntity
+import com.domain.entitys.TicketsDomainEntity
+import com.domain.entitys.TicketsOffersDomainEntity
 import com.domain.TicketsRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

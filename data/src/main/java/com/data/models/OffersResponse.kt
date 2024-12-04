@@ -1,4 +1,4 @@
-package com.data
+package com.data.models
 
 data class OffersResponse(
     val offers: List<Offer>

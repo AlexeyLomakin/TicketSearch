@@ -9,7 +9,7 @@ import okhttp3.ResponseBody.Companion.toResponseBody
 class LocalJsonInterceptor(private val context: Context) : Interceptor {
 
     private val resourceMap = mapOf(
-        "tickets_offers" to R.raw.offers_tickets,
+        "offers_tickets" to R.raw.offers_tickets,
         "tickets" to R.raw.tickets,
         "offers" to R.raw.offers
     )
@@ -18,7 +18,7 @@ class LocalJsonInterceptor(private val context: Context) : Interceptor {
         val uri = chain.request().url.toString()
 
         val fileName = when {
-            uri.contains("tickets_offers") -> "tickets_offers.json"
+            uri.contains("offers_tickets") -> "offers_tickets.json"
             uri.contains("tickets") -> "tickets.json"
             uri.contains("offers") -> "offers.json"
             else -> throw IllegalArgumentException("Unknown URI: $uri")

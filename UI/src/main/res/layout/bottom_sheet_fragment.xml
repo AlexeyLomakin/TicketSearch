@@ -28,6 +28,8 @@
                 android:id="@+id/departure"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
                 android:hint="@string/departure_hint"
                 android:inputType="text"
                 android:textColor="@color/white"
@@ -43,7 +45,7 @@
             <View
                 android:id="@+id/divider_view"
                 android:layout_width="0dp"
-                android:layout_height="2dp"
+                android:layout_height="0.7dp"
                 android:background="#5E5F61"
                 android:layout_marginTop="5dp"
                 app:layout_constraintEnd_toEndOf="@+id/departure"
@@ -53,7 +55,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_arrival"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 app:endIconMode="clear_text"
@@ -73,7 +75,8 @@
                     android:hint="@string/arrival_hint"
                     android:inputType="text"
                     android:textColor="@color/white"
-                    android:textColorHint="#9F9F9F" />
+                    android:textColorHint="#9F9F9F"
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -244,7 +247,9 @@
                         android:layout_height="50dp"
                         android:layout_marginEnd="8dp"
                         android:src="@drawable/istanbul"
-                        android:background="@drawable/round_corner"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/round_corner_bottom_sheet"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -307,6 +312,9 @@
                         android:layout_height="50dp"
                         android:layout_marginEnd="8dp"
                         android:src="@drawable/sochi"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/round_corner_bottom_sheet"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -368,6 +376,9 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:src="@drawable/phuket"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/round_corner_bottom_sheet"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         android:layout_marginEnd="8dp"/>

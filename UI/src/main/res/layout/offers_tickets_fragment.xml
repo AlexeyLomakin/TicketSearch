@@ -64,9 +64,10 @@
             <View
                 android:id="@+id/divider_view"
                 android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_marginTop="5dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
                 android:background="#5E5F61"
                 app:layout_constraintBottom_toTopOf="@+id/til_arrival"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -117,6 +118,7 @@
         app:cornerRadius="30dp"
         app:strokeWidth="1dp"
         android:elevation="4dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="@id/card_search"
         app:layout_constraintTop_toBottomOf="@id/card_search" />
 
@@ -196,6 +198,7 @@
             android:textColor="@color/white"
             android:text="Прямые рейсы"
             android:textSize="20sp"
+            android:paddingStart="4dp"
             android:layout_marginTop="8dp"
             android:layout_marginStart="10dp"/>
 
@@ -243,10 +246,13 @@
         android:layout_height="wrap_content"
         android:text="Подписка на цену"
         android:textColor="@color/white"
-        android:background="#242529"
+        android:backgroundTint="#242529"
+        android:paddingStart="10dp"
+        android:background="@drawable/round_corner"
         android:drawableLeft="@drawable/subscribe_icon"
         app:layout_constraintTop_toBottomOf="@id/search_tickets_btn"
         android:layout_marginTop="16dp"
+        android:drawablePadding="13dp"
         app:layout_constraintStart_toStartOf="@+id/card_search"
         app:layout_constraintEnd_toEndOf="@+id/card_search"/>
 
